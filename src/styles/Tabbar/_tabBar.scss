@@ -1,0 +1,36 @@
+.tab-bar-list {
+  padding: 15px 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+
+  .tab-bar-content {
+    @include flex();
+
+    .slick-slide {
+      width: unset !important;
+    }
+
+    .slick-arrow {
+      &::before {
+        color: #747474;
+      }
+
+      &.slick-disabled {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .tab-bar-item {
+    text-align: center;
+    @include font-size(14px);
+    color: rgb(56, 56, 61);
+    padding: 0 17px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

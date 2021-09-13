@@ -1,0 +1,28 @@
+.header-user {
+  position: relative;
+  height: 100%;
+
+  & > img {
+    width: 32px;
+    height: 32px;
+    margin-top: 2px;
+  }
+
+  .header-menu-text {
+    p {
+      img {
+        right: 32px;
+        bottom: 0;
+        position: absolute;
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+
+  &:hover {
+    .header-user__drop {
+      display: block;
+    }
+  }
+}

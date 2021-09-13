@@ -1,0 +1,16 @@
+ul.header-sugesstion {
+  display: flex;
+
+  li {
+    a {
+      @include font-size(11px);
+      color: #fff;
+      margin-right: 12px;
+      transition: 0.2s linear;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

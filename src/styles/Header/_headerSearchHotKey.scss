@@ -1,0 +1,21 @@
+.header-search-hot-key {
+  background-color: rgb(255, 255, 255);
+  padding: 8px 12px 12px;
+  border-top: 1px solid rgb(242, 242, 242);
+
+  .hot-key__header {
+    @include flex();
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    p {
+      @include font-size(15px);
+      font-weight: 400;
+    }
+  }
+}

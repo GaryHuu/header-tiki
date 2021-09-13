@@ -1,0 +1,57 @@
+.header-search-sugesstion {
+  margin-top: 8px;
+
+  ul {
+    a {
+      height: 36px;
+      line-height: 36px;
+      @include flex();
+      padding: 0 15px;
+
+      &:hover {
+        background-color: rgba(27, 168, 255, 0.1);
+      }
+
+      img {
+        height: 35px;
+        width: 35px;
+      }
+
+      div {
+        color: rgb(36, 36, 36);
+        @include font-size(13px);
+        display: block;
+        font-weight: 500;
+        padding-left: 8px;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border: none;
+    background-color: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(13, 92, 182);
+    transition: 0.2s linear;
+
+    span {
+      @include font-size(12px);
+    }
+
+    svg {
+      height: 1.3em;
+      width: 1.3em;
+      display: block;
+      margin-left: 4px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

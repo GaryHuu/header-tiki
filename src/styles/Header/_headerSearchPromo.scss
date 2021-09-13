@@ -1,0 +1,19 @@
+.header-search-promo {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  span {
+    display: block;
+    @include font-size(13px);
+    color: rgb(36, 36, 36);
+    font-weight: 500;
+  }
+
+  img {
+    display: block;
+  }
+}

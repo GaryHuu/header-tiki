@@ -1,0 +1,97 @@
+.header-user__drop {
+  position: absolute;
+  top: 70%;
+  left: -42px;
+  width: auto;
+  border: 1px solid rgb(239, 239, 239);
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+  padding: 12px;
+  display: none;
+  z-index: 2;
+
+  &::before {
+    height: 0;
+    width: 0;
+    content: '';
+    position: absolute;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255);
+    bottom: 100%;
+    left: 50%;
+    pointer-events: none;
+  }
+
+  button {
+    width: 236px;
+    height: 40px;
+    display: block;
+    color: rgb(74, 74, 74);
+    background: rgb(253, 216, 53);
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+    white-space: nowrap;
+    @include font-size(14px);
+    border-radius: 4px;
+    outline: none;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    & + button {
+      margin-top: 10px;
+    }
+  }
+
+  button:nth-child(3),
+  button:nth-child(4),
+  button:nth-child(5) {
+    justify-content: unset;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+
+    i {
+      margin: 0 8px;
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      padding: 0 8px 0 12px;
+      height: 40px;
+      line-height: 40px;
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  button:nth-child(3) {
+    background: rgb(59, 89, 152);
+
+    i {
+      background-position: -290px -288px;
+    }
+  }
+
+  button:nth-child(4) {
+    background: rgb(223, 74, 50);
+
+    i {
+      background-position: -29px -288px;
+    }
+  }
+
+  button:nth-child(5) {
+    background: rgb(15, 142, 221);
+
+    i {
+      background-position: -240px -72px;
+    }
+  }
+}

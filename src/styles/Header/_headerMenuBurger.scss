@@ -1,0 +1,36 @@
+.header-menu {
+  @include flex();
+  padding-top: 7px;
+  cursor: pointer;
+  position: relative;
+
+  .header-menu-text {
+    margin-left: 10px;
+
+    span {
+      @include font-size(11px);
+      color: #fff;
+    }
+
+    p {
+      @include font-size(13px);
+      color: #fff;
+      font-weight: 500;
+      position: relative;
+
+      img {
+        right: -16px;
+        bottom: 0;
+        position: absolute;
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+
+  &:hover {
+    .navbar-list {
+      display: block;
+    }
+  }
+}

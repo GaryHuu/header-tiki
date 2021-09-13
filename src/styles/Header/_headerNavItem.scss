@@ -1,0 +1,22 @@
+.nav-item {
+  display: block;
+  @include font-size(13px);
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  height: 34px;
+  line-height: 34px;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgb(225, 225, 225);
+  border-right: 1px solid rgb(225, 225, 225);
+
+  i {
+    @include font-size(18px);
+    padding: 0 10px;
+  }
+
+  &:hover {
+    background-color: rgb(26, 148, 255);
+    color: rgb(255, 255, 255);
+    border-color: rgb(26, 148, 255);
+  }
+}
